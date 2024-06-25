@@ -1,5 +1,6 @@
 name: Dispatcher
 on:
+  workflow_dispatch:
   push:
     branches: ['6']
 jobs:
