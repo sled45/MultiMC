@@ -123,7 +123,7 @@ QString getIdealPlatform(QString currentPlatform) {
     auto info = Sys::getKernelInfo();
     switch(info.kernelType) {
         case Sys::KernelType::Darwin: {
-            if(info.kernelMajor >= 17) {
+            if(info.kernelMajor >= 13) {
                 // macOS 10.13 or newer
                 return "osx64-5.15.2";
             }
